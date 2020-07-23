@@ -2,7 +2,7 @@
 using namespace std;
 
 constexpr const int mod = 1000000007;
-constexpr const int mod = 998244353;
+// constexpr const int mod = 998244353;
 class mint {
  public:
   long long x;
