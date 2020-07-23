@@ -39,6 +39,9 @@ class mint {
     return mint(*this) /= a;
   }
 
+  constexpr bool operator==(const mint& a) const noexcept { return x == a.x; }
+  constexpr bool operator!=(const mint& a) const noexcept { return x != a.x; }
+
   constexpr mint inv() const noexcept { return pow(mod - 2); }
   constexpr mint pow(long long t) const noexcept {
     if (!t) return 1;
