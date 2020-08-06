@@ -30,7 +30,7 @@ struct Sieve {
   vector<pair<int, int>> factor(int x) {
     vector<int> fl = factorList(x);
     if (fl.size() == 0) return {};
-    vector<P> res(1, P(fl[0], 0));
+    vector<pair<int, int>> res(1, P(fl[0], 0));
     for (int p : fl) {
       if (res.back().first == p) {
         res.back().second++;
